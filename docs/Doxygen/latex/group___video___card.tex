@@ -1,0 +1,198 @@
+\doxysection{Video\+\_\+\+Card}
+\hypertarget{group___video___card}{}\label{group___video___card}\index{Video\_Card@{Video\_Card}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___video___card_gaa2ac3ebc7870950bab4c0fc90f113155}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Sets the graphic mode. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga62f63672fd06c462a0873e30f5e32ef8}{set\+\_\+text\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em Sets text mode. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga78d147fc7fb3c4f1a4b9dcf8c585b032}{map\+\_\+vram}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Maps the video ram. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw the pixel in the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw an horizontal line on the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw a rectangle on the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_gabdb526916437536f1d504a620601bf06}{display\+\_\+xpm}} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Displays the xpm image on the screen. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___video___card_ga946bae3adcfee47121accdf4bd584e1a}{create\+\_\+back\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Creates a back buffer for double buffering. \end{DoxyCompactList}\item 
+\Hypertarget{group___video___card_ga7cb980add0410cb9849e3fae1ac64b47}\label{group___video___card_ga7cb980add0410cb9849e3fae1ac64b47} 
+void() {\bfseries copy\+\_\+back\+\_\+to\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em Copy the information in the back buffer to the frame buffer. \end{DoxyCompactList}\item 
+\Hypertarget{group___video___card_ga984a28252ec44614d778f95c81b7dacb}\label{group___video___card_ga984a28252ec44614d778f95c81b7dacb} 
+void() {\bfseries erase\+\_\+back\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Sets the back buffer to have white color. \end{DoxyCompactList}\item 
+\Hypertarget{group___video___card_ga833627e2e84d7fa6c03fdcc391f065af}\label{group___video___card_ga833627e2e84d7fa6c03fdcc391f065af} 
+void() {\bfseries destroy\+\_\+back\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Destroy the back buffer freeing its memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{group___video___card_ga9fcc2243068f8e628648febc0909c509}\label{group___video___card_ga9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t {\bfseries mode\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using video card 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___video___card_ga946bae3adcfee47121accdf4bd584e1a}\label{group___video___card_ga946bae3adcfee47121accdf4bd584e1a} 
+\index{Video\_Card@{Video\_Card}!create\_back\_buffer@{create\_back\_buffer}}
+\index{create\_back\_buffer@{create\_back\_buffer}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{create\_back\_buffer()}{create\_back\_buffer()}}
+{\footnotesize\ttfamily int() create\+\_\+back\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a back buffer for double buffering. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_gabdb526916437536f1d504a620601bf06}\label{group___video___card_gabdb526916437536f1d504a620601bf06} 
+\index{Video\_Card@{Video\_Card}!display\_xpm@{display\_xpm}}
+\index{display\_xpm@{display\_xpm}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{display\_xpm()}{display\_xpm()}}
+{\footnotesize\ttfamily int() display\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Displays the xpm image on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The xpm image to be displayed \\
+\hline
+{\em x} & The x position of the upper left corner of the image \\
+\hline
+{\em y} & The y position of the upper left corner of the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_ga78d147fc7fb3c4f1a4b9dcf8c585b032}\label{group___video___card_ga78d147fc7fb3c4f1a4b9dcf8c585b032} 
+\index{Video\_Card@{Video\_Card}!map\_vram@{map\_vram}}
+\index{map\_vram@{map\_vram}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{map\_vram()}{map\_vram()}}
+{\footnotesize\ttfamily int() map\+\_\+vram (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Maps the video ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The vbe mode to get the mode information to map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_gaa2ac3ebc7870950bab4c0fc90f113155}\label{group___video___card_gaa2ac3ebc7870950bab4c0fc90f113155} 
+\index{Video\_Card@{Video\_Card}!set\_graphic\_mode@{set\_graphic\_mode}}
+\index{set\_graphic\_mode@{set\_graphic\_mode}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{set\_graphic\_mode()}{set\_graphic\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the graphic mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The vbe mode to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_ga62f63672fd06c462a0873e30f5e32ef8}\label{group___video___card_ga62f63672fd06c462a0873e30f5e32ef8} 
+\index{Video\_Card@{Video\_Card}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily int() set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets text mode. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_ga5e5b25bd525250f61f40b9e9f212d5e6}\label{group___video___card_ga5e5b25bd525250f61f40b9e9f212d5e6} 
+\index{Video\_Card@{Video\_Card}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw an horizontal line on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the left of the horizontal line on the screen \\
+\hline
+{\em y} & The y position of the left of the horizontal line on the screen \\
+\hline
+{\em len} & The length of the line \\
+\hline
+{\em color} & The color of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_ga08c498ffeb0a3962e3b7711b57397741}\label{group___video___card_ga08c498ffeb0a3962e3b7711b57397741} 
+\index{Video\_Card@{Video\_Card}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw the pixel in the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position on the screen of the pixel \\
+\hline
+{\em y} & The y position on the screen of the pixel \\
+\hline
+{\em color} & The color of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___video___card_ga99d2da2559e11200c6b40c469e9977ec}\label{group___video___card_ga99d2da2559e11200c6b40c469e9977ec} 
+\index{Video\_Card@{Video\_Card}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!Video\_Card@{Video\_Card}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a rectangle on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the upper left corner of the rectangle on the screen \\
+\hline
+{\em y} & The y position of the upper left corner of the rectangle on the screen \\
+\hline
+{\em width} & The width of the rectangle \\
+\hline
+{\em height} & The height of the rectangle \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}

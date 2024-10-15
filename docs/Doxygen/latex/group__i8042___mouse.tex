@@ -1,0 +1,93 @@
+\doxysection{i8042\+\_\+\+Mouse}
+\hypertarget{group__i8042___mouse}{}\label{group__i8042___mouse}\index{i8042\_Mouse@{i8042\_Mouse}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{group__i8042___mouse_ga85964cb90343bb1a029b1d1b4229f910}\label{group__i8042___mouse_ga85964cb90343bb1a029b1d1b4229f910} 
+\#define {\bfseries MOUSE\+\_\+\+IRQ}~12
+\begin{DoxyCompactList}\small\item\em Mouse IRQ line. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gae5b6eab41d1228bab8b389a72721c1fc}\label{group__i8042___mouse_gae5b6eab41d1228bab8b389a72721c1fc} 
+\#define {\bfseries WAIT\+\_\+\+MOUSE}~20000
+\begin{DoxyCompactList}\small\item\em Tick delay for mouse. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga769d8948abca157c101ff764f4c4d860}\label{group__i8042___mouse_ga769d8948abca157c101ff764f4c4d860} 
+\#define {\bfseries MOUSE\+\_\+\+ST\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Mouse status register. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2}\label{group__i8042___mouse_gac3a4f1537e2dfbd6fff763a1c6cf7da2} 
+\#define {\bfseries MOUSE\+\_\+\+CMD\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Register for write mouse commands. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga786e7f57e97339417636c46931c227f9}\label{group__i8042___mouse_ga786e7f57e97339417636c46931c227f9} 
+\#define {\bfseries MOUSE\+\_\+\+OUT\+\_\+\+BUF}~0x60
+\begin{DoxyCompactList}\small\item\em Mouse output buffer register. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gaaf14c3b7fd47bd4eed48d85517e53ea5}\label{group__i8042___mouse_gaaf14c3b7fd47bd4eed48d85517e53ea5} 
+\#define {\bfseries MOUSE\+\_\+\+ARG\+\_\+\+REG}~0x60
+\begin{DoxyCompactList}\small\item\em Address to pass the arguments of a command. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga882b61604127915e065f354543f840b0}\label{group__i8042___mouse_ga882b61604127915e065f354543f840b0} 
+\#define {\bfseries MOUSE\+\_\+\+ST\+\_\+\+OBF}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit indicates output buffer full. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga6807e5ca27dce2b8133baea84700bc6b}\label{group__i8042___mouse_ga6807e5ca27dce2b8133baea84700bc6b} 
+\#define {\bfseries MOUSE\+\_\+\+ST\+\_\+\+IBF}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Bit indicates input buffer full. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga2785fa0f4aa5045ae35b4af349eb5d83}\label{group__i8042___mouse_ga2785fa0f4aa5045ae35b4af349eb5d83} 
+\#define {\bfseries MOUSE\+\_\+\+ST\+\_\+\+AUX}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse data. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gac2a5712f9abf47f84730bff1eed739df}\label{group__i8042___mouse_gac2a5712f9abf47f84730bff1eed739df} 
+\#define {\bfseries MOUSE\+\_\+\+PAR\+\_\+\+ERR}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Bit indicates parity error. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga433529c10cbb9a23485c38542351972d}\label{group__i8042___mouse_ga433529c10cbb9a23485c38542351972d} 
+\#define {\bfseries MOUSE\+\_\+\+TO\+\_\+\+ERR}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Bit indicates timeout error. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga064ec583ce5b039303686ce4c64b4f3e}\label{group__i8042___mouse_ga064ec583ce5b039303686ce4c64b4f3e} 
+\#define {\bfseries MOUSE\+\_\+\+ACK}~0x\+FA
+\begin{DoxyCompactList}\small\item\em Acknolegment byte. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gaef4a299dedf83b6dc4765baab230affd}\label{group__i8042___mouse_gaef4a299dedf83b6dc4765baab230affd} 
+\#define {\bfseries MOUSE\+\_\+\+NACK}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Bit indicates timeout error. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga81c0f94add844b0761bd142f7f708431}\label{group__i8042___mouse_ga81c0f94add844b0761bd142f7f708431} 
+\#define {\bfseries MOUSE\+\_\+\+LB}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit indicates left mouse button pressed. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga5f47c1d60579c8691054c939c1d7c20e}\label{group__i8042___mouse_ga5f47c1d60579c8691054c939c1d7c20e} 
+\#define {\bfseries MOUSE\+\_\+\+RB}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Bit indicates right mouse button pressed. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga5a934eaadd3536aabe6df0adf6728e8e}\label{group__i8042___mouse_ga5a934eaadd3536aabe6df0adf6728e8e} 
+\#define {\bfseries MOUSE\+\_\+\+MB}~BIT(2)
+\begin{DoxyCompactList}\small\item\em Bit indicates middle mouse button pressed. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gab1918ba340afa57789b0c2dcd3b5cd7d}\label{group__i8042___mouse_gab1918ba340afa57789b0c2dcd3b5cd7d} 
+\#define {\bfseries MOUSE\+\_\+\+BIT\+\_\+\+SYNC}~BIT(3)
+\begin{DoxyCompactList}\small\item\em Bit indicates syncronization in byte 1. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga0cdb2646c0fe020dfd230c3bbceae07a}\label{group__i8042___mouse_ga0cdb2646c0fe020dfd230c3bbceae07a} 
+\#define {\bfseries MOUSE\+\_\+\+X\+\_\+\+OV}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse x-\/displacement overflow. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga42d79fab1c364106889698324b72ce5b}\label{group__i8042___mouse_ga42d79fab1c364106889698324b72ce5b} 
+\#define {\bfseries MOUSE\+\_\+\+Y\+\_\+\+OV}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse y-\/displacement overflow. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gac49aa38e0d8da143f439def5e796d08c}\label{group__i8042___mouse_gac49aa38e0d8da143f439def5e796d08c} 
+\#define {\bfseries MOUSE\+\_\+\+X\+\_\+\+MSB}~BIT(4)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse MSB X displacement. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga36f55f4cc48222327c3f3f7ba268c2c8}\label{group__i8042___mouse_ga36f55f4cc48222327c3f3f7ba268c2c8} 
+\#define {\bfseries MOUSE\+\_\+\+Y\+\_\+\+MSB}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse MSB Y displacement. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga445d9f641767b5ae356ba8bd0be0cb74}\label{group__i8042___mouse_ga445d9f641767b5ae356ba8bd0be0cb74} 
+\#define {\bfseries WRITE\+\_\+\+B\+\_\+\+TO\+\_\+\+MOUSE\+\_\+\+CMDB}~0x\+D4
+\begin{DoxyCompactList}\small\item\em Command to write byte to a mouse. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga9b384e72f827b5e87a2b5ba4254c0b06}\label{group__i8042___mouse_ga9b384e72f827b5e87a2b5ba4254c0b06} 
+\#define {\bfseries ENABLE\+\_\+\+STREAM\+\_\+\+MODE\+\_\+\+CMDB}~0x\+EA
+\begin{DoxyCompactList}\small\item\em Command to set stream mode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gacf6051c05a6e9673a2ed5b497234fcff}\label{group__i8042___mouse_gacf6051c05a6e9673a2ed5b497234fcff} 
+\#define {\bfseries ENABLE\+\_\+\+DATA\+\_\+\+REPORT\+\_\+\+CMDB}~0x\+F4
+\begin{DoxyCompactList}\small\item\em Command to enable data report. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gaae5932def46ef15ea5d5e26198045cb6}\label{group__i8042___mouse_gaae5932def46ef15ea5d5e26198045cb6} 
+\#define {\bfseries DISABLE\+\_\+\+DATA\+\_\+\+REPORT\+\_\+\+CMDB}~0x\+F5
+\begin{DoxyCompactList}\small\item\em Command to disable data report. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga60f684d2fbb7ad7ea2ac7ff96a66f03d}\label{group__i8042___mouse_ga60f684d2fbb7ad7ea2ac7ff96a66f03d} 
+\#define {\bfseries ENABLE\+\_\+\+MOUSE\+\_\+\+CMDB}~0x\+A8
+\begin{DoxyCompactList}\small\item\em Command to enable mouse. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_ga41ecc0db44dfdb36bf89a9c7406c0898}\label{group__i8042___mouse_ga41ecc0db44dfdb36bf89a9c7406c0898} 
+\#define {\bfseries DISABLE\+\_\+\+MOUSE\+\_\+\+CMDB}~0x\+A7
+\begin{DoxyCompactList}\small\item\em Command to disable mouse. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___mouse_gadf3cfe9baf8ccc04a6c27acb7fa8b8d5}\label{group__i8042___mouse_gadf3cfe9baf8ccc04a6c27acb7fa8b8d5} 
+\#define {\bfseries CHCK\+\_\+\+MOUSE\+\_\+\+ITF\+\_\+\+CMDB}~0x\+A9
+\begin{DoxyCompactList}\small\item\em Command to check mouse interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants for programming the i8042 mouse 

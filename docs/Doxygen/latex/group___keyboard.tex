@@ -1,0 +1,133 @@
+\doxysection{Keyboard}
+\hypertarget{group___keyboard}{}\label{group___keyboard}\index{Keyboard@{Keyboard}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___keyboard_ga02884ada1971dbade466081413210b18}{kbc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupt. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___keyboard_ga1102381e6a9e876e05dd78c58ccb5673}{kbc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupt. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___keyboard_ga750acde328be0630385de05dd4384092}{read\+\_\+kbc\+\_\+config}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}value)
+\begin{DoxyCompactList}\small\item\em Reads the keyboard configuration. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___keyboard_ga922716b6bea6e3f6f6213a09944f21e1}{read\+\_\+kbc\+\_\+out\+\_\+buf}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}sc)
+\begin{DoxyCompactList}\small\item\em Reads the keyboard output buffer. \end{DoxyCompactList}\item 
+\Hypertarget{group___keyboard_gaea970a154161a35f6894898a092ed70a}\label{group___keyboard_gaea970a154161a35f6894898a092ed70a} 
+void() {\bfseries kbc\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___keyboard_ga7f8dd4c9bf65ba2155792f9c5867cf37}{kbc\+\_\+cmd}} (uint8\+\_\+t cmdb, uint8\+\_\+t \texorpdfstring{$\ast$}{*}cmd)
+\begin{DoxyCompactList}\small\item\em Performs action in the keyboard with the command byte. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___keyboard_ga9ee76559f34bd5c005c627f7a9c96b4e}{write\+\_\+cmd\+\_\+byte}} (int port, uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Writes the command byte in the port specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the keyboard 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___keyboard_ga7f8dd4c9bf65ba2155792f9c5867cf37}\label{group___keyboard_ga7f8dd4c9bf65ba2155792f9c5867cf37} 
+\index{Keyboard@{Keyboard}!kbc\_cmd@{kbc\_cmd}}
+\index{kbc\_cmd@{kbc\_cmd}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_cmd()}{kbc\_cmd()}}
+{\footnotesize\ttfamily int() kbc\+\_\+cmd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmdb,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Performs action in the keyboard with the command byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmdb} & Keyboard command \\
+\hline
+{\em cmd} & Second argument for the command byte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___keyboard_ga02884ada1971dbade466081413210b18}\label{group___keyboard_ga02884ada1971dbade466081413210b18} 
+\index{Keyboard@{Keyboard}!kbc\_subscribe\_int@{kbc\_subscribe\_int}}
+\index{kbc\_subscribe\_int@{kbc\_subscribe\_int}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_subscribe\_int()}{kbc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Bit number of keyboard IRQ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___keyboard_ga1102381e6a9e876e05dd78c58ccb5673}\label{group___keyboard_ga1102381e6a9e876e05dd78c58ccb5673} 
+\index{Keyboard@{Keyboard}!kbc\_unsubscribe\_int@{kbc\_unsubscribe\_int}}
+\index{kbc\_unsubscribe\_int@{kbc\_unsubscribe\_int}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_unsubscribe\_int()}{kbc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() kbc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard interrupt. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___keyboard_ga750acde328be0630385de05dd4384092}\label{group___keyboard_ga750acde328be0630385de05dd4384092} 
+\index{Keyboard@{Keyboard}!read\_kbc\_config@{read\_kbc\_config}}
+\index{read\_kbc\_config@{read\_kbc\_config}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{read\_kbc\_config()}{read\_kbc\_config()}}
+{\footnotesize\ttfamily int() read\+\_\+kbc\+\_\+config (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads the keyboard configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value of the keyboard configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___keyboard_ga922716b6bea6e3f6f6213a09944f21e1}\label{group___keyboard_ga922716b6bea6e3f6f6213a09944f21e1} 
+\index{Keyboard@{Keyboard}!read\_kbc\_out\_buf@{read\_kbc\_out\_buf}}
+\index{read\_kbc\_out\_buf@{read\_kbc\_out\_buf}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{read\_kbc\_out\_buf()}{read\_kbc\_out\_buf()}}
+{\footnotesize\ttfamily int() read\+\_\+kbc\+\_\+out\+\_\+buf (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{sc }\end{DoxyParamCaption})}
+
+
+
+Reads the keyboard output buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sc} & The data in the output buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___keyboard_ga9ee76559f34bd5c005c627f7a9c96b4e}\label{group___keyboard_ga9ee76559f34bd5c005c627f7a9c96b4e} 
+\index{Keyboard@{Keyboard}!write\_cmd\_byte@{write\_cmd\_byte}}
+\index{write\_cmd\_byte@{write\_cmd\_byte}!Keyboard@{Keyboard}}
+\doxysubsubsection{\texorpdfstring{write\_cmd\_byte()}{write\_cmd\_byte()}}
+{\footnotesize\ttfamily int() write\+\_\+cmd\+\_\+byte (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Writes the command byte in the port specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to write the command byte \\
+\hline
+{\em cmd} & The command byte to write in the port \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}

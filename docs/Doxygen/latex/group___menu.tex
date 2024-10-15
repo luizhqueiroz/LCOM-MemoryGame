@@ -1,0 +1,86 @@
+\doxysection{Menu}
+\hypertarget{group___menu}{}\label{group___menu}\index{Menu@{Menu}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___menu_ga56791ef503b33dcc665a0d0c3ccdb152}{display\+\_\+menu\+\_\+page}} ()
+\begin{DoxyCompactList}\small\item\em Display on the screen the elements to create the menu page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___menu_gafc50eb4de0cd4c5052dd507ea3f2a9b6}{menu\+\_\+display\+\_\+mouse}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Display the mouse used for navigate on the menu. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___menu_gadaa3649f1142beef634117c3c1c39d2a}{menu\+\_\+control\+\_\+mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Controls what the mouse can do in the menu page. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___menu_ga0363cfcde99daebce4b92dae0382173c}{menu\+\_\+control\+\_\+kbc}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bytes)
+\begin{DoxyCompactList}\small\item\em Controls what the keyboard can do in the menu page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for the game menu 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___menu_ga56791ef503b33dcc665a0d0c3ccdb152}\label{group___menu_ga56791ef503b33dcc665a0d0c3ccdb152} 
+\index{Menu@{Menu}!display\_menu\_page@{display\_menu\_page}}
+\index{display\_menu\_page@{display\_menu\_page}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{display\_menu\_page()}{display\_menu\_page()}}
+{\footnotesize\ttfamily int() display\+\_\+menu\+\_\+page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display on the screen the elements to create the menu page. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___menu_ga0363cfcde99daebce4b92dae0382173c}\label{group___menu_ga0363cfcde99daebce4b92dae0382173c} 
+\index{Menu@{Menu}!menu\_control\_kbc@{menu\_control\_kbc}}
+\index{menu\_control\_kbc@{menu\_control\_kbc}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menu\_control\_kbc()}{menu\_control\_kbc()}}
+{\footnotesize\ttfamily void() menu\+\_\+control\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bytes }\end{DoxyParamCaption})}
+
+
+
+Controls what the keyboard can do in the menu page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & The scancode read from the keyboard \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___menu_gadaa3649f1142beef634117c3c1c39d2a}\label{group___menu_gadaa3649f1142beef634117c3c1c39d2a} 
+\index{Menu@{Menu}!menu\_control\_mouse@{menu\_control\_mouse}}
+\index{menu\_control\_mouse@{menu\_control\_mouse}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menu\_control\_mouse()}{menu\_control\_mouse()}}
+{\footnotesize\ttfamily void() menu\+\_\+control\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Controls what the mouse can do in the menu page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse parsed packet to check its click \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___menu_gafc50eb4de0cd4c5052dd507ea3f2a9b6}\label{group___menu_gafc50eb4de0cd4c5052dd507ea3f2a9b6} 
+\index{Menu@{Menu}!menu\_display\_mouse@{menu\_display\_mouse}}
+\index{menu\_display\_mouse@{menu\_display\_mouse}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menu\_display\_mouse()}{menu\_display\_mouse()}}
+{\footnotesize\ttfamily int() menu\+\_\+display\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Display the mouse used for navigate on the menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}

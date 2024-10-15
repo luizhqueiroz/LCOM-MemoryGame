@@ -1,0 +1,195 @@
+\doxysection{Main\+\_\+\+Game}
+\hypertarget{group___main___game}{}\label{group___main___game}\index{Main\_Game@{Main\_Game}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___main___game_ga853abdd8c36c9ce444f07a545281325c}{init\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the game. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_gaa739f5b2858cfb9ce7e94348dd75fbd7}{main\+\_\+game\+\_\+display\+\_\+page}} ()
+\begin{DoxyCompactList}\small\item\em Display on the screen the elements to create the game page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_ga29a4e7282dda4de7654eddcab87588b0}{main\+\_\+game\+\_\+control}} ()
+\begin{DoxyCompactList}\small\item\em Controls the game logic. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_ga246627b67ee1fbf4b2f423d4293d2c8b}{verify\+\_\+selected\+\_\+cards}} ()
+\begin{DoxyCompactList}\small\item\em Verify the cards selected by the player to check if it\textquotesingle{}s a match. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___main___game_ga4000cf95fc02a7bf2dda372d924b7033}{main\+\_\+game\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Increase the game time each second. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_ga194a15e65fc65741678507e546792fd7}{main\+\_\+game\+\_\+display\+\_\+mouse}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Display the mouse used for play the game. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___main___game_gab0fa878d9053327f2fd01830769090bb}{main\+\_\+game\+\_\+control\+\_\+mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Controls what the mouse can do when playing the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{group___main___game_ga519a8ba0850bce86b6067c6ce9793c89}{select\+\_\+card}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Select the card where the mouse is over. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_ga61825b20440c67a8c0e2818be4a14f65}{unturn\+\_\+selected\+\_\+cards}} ()
+\begin{DoxyCompactList}\small\item\em Unturn the cards selected by the player. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___main___game_ga25d11ae8ac325b464523ba4c1097b801}{display\+\_\+cards}} ()
+\begin{DoxyCompactList}\small\item\em Display the cards in the screen. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___main___game_ga6533231f74596e82bf872d28bcb981b2}{main\+\_\+game\+\_\+control\+\_\+kbc}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bytes)
+\begin{DoxyCompactList}\small\item\em Controls what the keyboard can do when playing the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions specific for the game scenario 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___main___game_ga25d11ae8ac325b464523ba4c1097b801}\label{group___main___game_ga25d11ae8ac325b464523ba4c1097b801} 
+\index{Main\_Game@{Main\_Game}!display\_cards@{display\_cards}}
+\index{display\_cards@{display\_cards}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{display\_cards()}{display\_cards()}}
+{\footnotesize\ttfamily int() display\+\_\+cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display the cards in the screen. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga853abdd8c36c9ce444f07a545281325c}\label{group___main___game_ga853abdd8c36c9ce444f07a545281325c} 
+\index{Main\_Game@{Main\_Game}!init\_game@{init\_game}}
+\index{init\_game@{init\_game}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{init\_game()}{init\_game()}}
+{\footnotesize\ttfamily int() init\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiates the game. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga29a4e7282dda4de7654eddcab87588b0}\label{group___main___game_ga29a4e7282dda4de7654eddcab87588b0} 
+\index{Main\_Game@{Main\_Game}!main\_game\_control@{main\_game\_control}}
+\index{main\_game\_control@{main\_game\_control}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_control()}{main\_game\_control()}}
+{\footnotesize\ttfamily int() main\+\_\+game\+\_\+control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Controls the game logic. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga6533231f74596e82bf872d28bcb981b2}\label{group___main___game_ga6533231f74596e82bf872d28bcb981b2} 
+\index{Main\_Game@{Main\_Game}!main\_game\_control\_kbc@{main\_game\_control\_kbc}}
+\index{main\_game\_control\_kbc@{main\_game\_control\_kbc}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_control\_kbc()}{main\_game\_control\_kbc()}}
+{\footnotesize\ttfamily void() main\+\_\+game\+\_\+control\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bytes }\end{DoxyParamCaption})}
+
+
+
+Controls what the keyboard can do when playing the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & The scancode read from the keyboard \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___main___game_gab0fa878d9053327f2fd01830769090bb}\label{group___main___game_gab0fa878d9053327f2fd01830769090bb} 
+\index{Main\_Game@{Main\_Game}!main\_game\_control\_mouse@{main\_game\_control\_mouse}}
+\index{main\_game\_control\_mouse@{main\_game\_control\_mouse}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_control\_mouse()}{main\_game\_control\_mouse()}}
+{\footnotesize\ttfamily void() main\+\_\+game\+\_\+control\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Controls what the mouse can do when playing the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse parsed packet to check its click \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___main___game_ga194a15e65fc65741678507e546792fd7}\label{group___main___game_ga194a15e65fc65741678507e546792fd7} 
+\index{Main\_Game@{Main\_Game}!main\_game\_display\_mouse@{main\_game\_display\_mouse}}
+\index{main\_game\_display\_mouse@{main\_game\_display\_mouse}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_display\_mouse()}{main\_game\_display\_mouse()}}
+{\footnotesize\ttfamily int() main\+\_\+game\+\_\+display\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Display the mouse used for play the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_gaa739f5b2858cfb9ce7e94348dd75fbd7}\label{group___main___game_gaa739f5b2858cfb9ce7e94348dd75fbd7} 
+\index{Main\_Game@{Main\_Game}!main\_game\_display\_page@{main\_game\_display\_page}}
+\index{main\_game\_display\_page@{main\_game\_display\_page}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_display\_page()}{main\_game\_display\_page()}}
+{\footnotesize\ttfamily int() main\+\_\+game\+\_\+display\+\_\+page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display on the screen the elements to create the game page. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga4000cf95fc02a7bf2dda372d924b7033}\label{group___main___game_ga4000cf95fc02a7bf2dda372d924b7033} 
+\index{Main\_Game@{Main\_Game}!main\_game\_timer@{main\_game\_timer}}
+\index{main\_game\_timer@{main\_game\_timer}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{main\_game\_timer()}{main\_game\_timer()}}
+{\footnotesize\ttfamily void() main\+\_\+game\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase the game time each second. 
+
+\Hypertarget{group___main___game_ga519a8ba0850bce86b6067c6ce9793c89}\label{group___main___game_ga519a8ba0850bce86b6067c6ce9793c89} 
+\index{Main\_Game@{Main\_Game}!select\_card@{select\_card}}
+\index{select\_card@{select\_card}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{select\_card()}{select\_card()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_card}{Card}} \texorpdfstring{$\ast$}{*}() select\+\_\+card (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Select the card where the mouse is over. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return a pointer to the card where the mouse is over. If the mouse is not over any card, return null 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga61825b20440c67a8c0e2818be4a14f65}\label{group___main___game_ga61825b20440c67a8c0e2818be4a14f65} 
+\index{Main\_Game@{Main\_Game}!unturn\_selected\_cards@{unturn\_selected\_cards}}
+\index{unturn\_selected\_cards@{unturn\_selected\_cards}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{unturn\_selected\_cards()}{unturn\_selected\_cards()}}
+{\footnotesize\ttfamily int() unturn\+\_\+selected\+\_\+cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unturn the cards selected by the player. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___main___game_ga246627b67ee1fbf4b2f423d4293d2c8b}\label{group___main___game_ga246627b67ee1fbf4b2f423d4293d2c8b} 
+\index{Main\_Game@{Main\_Game}!verify\_selected\_cards@{verify\_selected\_cards}}
+\index{verify\_selected\_cards@{verify\_selected\_cards}!Main\_Game@{Main\_Game}}
+\doxysubsubsection{\texorpdfstring{verify\_selected\_cards()}{verify\_selected\_cards()}}
+{\footnotesize\ttfamily int() verify\+\_\+selected\+\_\+cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Verify the cards selected by the player to check if it\textquotesingle{}s a match. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}

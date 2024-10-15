@@ -1,0 +1,36 @@
+\doxysection{mouse.\+h}
+\hypertarget{mouse_8h_source}{}\label{mouse_8h_source}\index{devices/mouse/mouse.h@{devices/mouse/mouse.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \_LCOM\_MOUSE\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}i8042\_mouse.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ int\ (\mbox{\hyperlink{group___mouse_gab8a56128db217a4c7b7e80438c283e68}{mouse\_read\_config}})(uint8\_t\ *st);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ int\ (\mbox{\hyperlink{group___mouse_gaacc14bda60a2372ac18820e0da13efff}{mouse\_read\_out\_buf}})(uint8\_t\ *output);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00040\ int\ (\mbox{\hyperlink{group___mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\_subscribe\_int}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ int\ (\mbox{\hyperlink{group___mouse_ga3ecf823d80520009ae5e0d76ae40a3c3}{mouse\_unsubscribe\_int}})();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ int\ (\mbox{\hyperlink{group___mouse_ga0b7b792a5d7d8d05abd500a047064313}{mouse\_enable\_stream\_mode}})();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ int\ (\mbox{\hyperlink{group___mouse_gac0dbdcff151cd0aa18fe8ac124815fce}{mouse\_enable\_dt\_reporting}})();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ int\ (\mbox{\hyperlink{group___mouse_ga28c86b537f30bf8697a4a02c9f285e25}{mouse\_disable\_dt\_reporting}})();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00073\ int\ (\mbox{\hyperlink{group___mouse_ga3a1def8e472a2c7f15edb72444bcc901}{mouse\_cmd}})(uint8\_t\ cmd,\ uint8\_t\ cmdb);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ void\ (\mbox{\hyperlink{group___mouse_ga049ae5cd932abc1a70e0bb58df776f5e}{mouse\_parse\_packet}})();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ void\ (\mbox{\hyperlink{group___mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\_ih}})();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ void\ (\mbox{\hyperlink{group___mouse_ga3dd910b7f429f5185170cac05b66bdd4}{mouse\_update\_position}})();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

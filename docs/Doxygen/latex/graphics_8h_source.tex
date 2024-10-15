@@ -1,0 +1,46 @@
+\doxysection{graphics.\+h}
+\hypertarget{graphics_8h_source}{}\label{graphics_8h_source}\index{devices/video\_card/graphics.h@{devices/video\_card/graphics.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_GRAPHICS\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \_LCOM\_GRAPHICS\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}vbe.h"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{static}\ uint8\_t\ *frame\_adress;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{static}\ uint8\_t\ *back\_buffer;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ h\_res;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ v\_res;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bytes\_per\_pixel;}
+\DoxyCodeLine{00026\ vbe\_mode\_info\_t\ mode\_info;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00034\ int\ (\mbox{\hyperlink{group___video___card_gaa2ac3ebc7870950bab4c0fc90f113155}{set\_graphic\_mode}})(uint16\_t\ mode);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ int\ (\mbox{\hyperlink{group___video___card_ga62f63672fd06c462a0873e30f5e32ef8}{set\_text\_mode}})();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ int\ (\mbox{\hyperlink{group___video___card_ga78d147fc7fb3c4f1a4b9dcf8c585b032}{map\_vram}})(uint16\_t\ mode);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00059\ int\ (\mbox{\hyperlink{group___video___card_ga08c498ffeb0a3962e3b7711b57397741}{vg\_draw\_pixel}})(uint16\_t\ x,\ uint16\_t\ y,\ uint32\_t\ color);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00070\ int\ (\mbox{\hyperlink{group___video___card_ga5e5b25bd525250f61f40b9e9f212d5e6}{vg\_draw\_hline}})(uint16\_t\ x,\ uint16\_t\ y,\ uint16\_t\ len,\ uint32\_t\ color);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00082\ int\ (\mbox{\hyperlink{group___video___card_ga99d2da2559e11200c6b40c469e9977ec}{vg\_draw\_rectangle}})(uint16\_t\ x,\ uint16\_t\ y,\ uint16\_t\ width,\ uint16\_t\ height,\ uint32\_t\ color);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00092\ int\ (\mbox{\hyperlink{group___video___card_gabdb526916437536f1d504a620601bf06}{display\_xpm}})(xpm\_map\_t\ xpm,\ uint16\_t\ x,\ uint16\_t\ y);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ int\ (\mbox{\hyperlink{group___video___card_ga946bae3adcfee47121accdf4bd584e1a}{create\_back\_buffer}})();}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00104\ void\ (\mbox{\hyperlink{group___video___card_ga7cb980add0410cb9849e3fae1ac64b47}{copy\_back\_to\_frame}})();}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00109\ void\ (\mbox{\hyperlink{group___video___card_ga984a28252ec44614d778f95c81b7dacb}{erase\_back\_buffer}})();}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00114\ void\ (\mbox{\hyperlink{group___video___card_ga833627e2e84d7fa6c03fdcc391f065af}{destroy\_back\_buffer}})();}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

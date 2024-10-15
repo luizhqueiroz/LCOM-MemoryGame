@@ -1,0 +1,32 @@
+\doxysection{sprite.\+h}
+\hypertarget{sprite_8h_source}{}\label{sprite_8h_source}\index{images/sprite/sprite.h@{images/sprite/sprite.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \_LCOM\_SPRITE\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../devices/video\_card/graphics.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../background/background\_xpm.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}../mouse/mouse\_xpm.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}../title/title\_xpm.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}../menu/menu\_option\_xpm.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}../symbol/symbol\_xpm.h"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}../letter/letter\_xpm.h"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}../number/number\_xpm.h"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{int}\ width,\ height;}
+\DoxyCodeLine{00027\ \ \ uint32\_t\ *map;}
+\DoxyCodeLine{00028\ \}\ \mbox{\hyperlink{struct_sprite}{Sprite}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{group___sprite_ga92401a799eba45c07a02c9f76eed2ec4}{create\_sprite}}(xpm\_map\_t\ xmap);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group___sprite_gaf16c6befaac9ffb673b9e3c798d542ed}{destroy\_sprite}}(\mbox{\hyperlink{struct_sprite}{Sprite}}\ *sp);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group___sprite_gafefa7ff9b28f326afbaa89a51bfe23fd}{display\_sprite}}(\mbox{\hyperlink{struct_sprite}{Sprite}}\ *sprite,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

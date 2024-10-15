@@ -1,0 +1,71 @@
+\doxysection{game\+\_\+utils.\+h}
+\hypertarget{game__utils_8h_source}{}\label{game__utils_8h_source}\index{game/game\_utils/game\_utils.h@{game/game\_utils/game\_utils.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_GAME\_UTILS\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \_LCOM\_GAME\_UTILS\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../../images/sprite/sprite.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../card/card.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *game\_title;}
+\DoxyCodeLine{00019\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *record\_title;}
+\DoxyCodeLine{00020\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *congratulations;}
+\DoxyCodeLine{00021\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *start\_option;}
+\DoxyCodeLine{00022\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *exit\_option;}
+\DoxyCodeLine{00023\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *record\_option;}
+\DoxyCodeLine{00024\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *save\_option;}
+\DoxyCodeLine{00025\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *x\_option;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *background;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *mouse\_cursor;}
+\DoxyCodeLine{00030\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *select\_mouse\_cursor;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_1;}
+\DoxyCodeLine{00033\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_2;}
+\DoxyCodeLine{00034\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_3;}
+\DoxyCodeLine{00035\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_4;}
+\DoxyCodeLine{00036\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_5;}
+\DoxyCodeLine{00037\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_6;}
+\DoxyCodeLine{00038\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_7;}
+\DoxyCodeLine{00039\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_8;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_cover;}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *symbol\_cover\_selected;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_1;}
+\DoxyCodeLine{00045\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_2;}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_3;}
+\DoxyCodeLine{00047\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_4;}
+\DoxyCodeLine{00048\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_5;}
+\DoxyCodeLine{00049\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_6;}
+\DoxyCodeLine{00050\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_7;}
+\DoxyCodeLine{00051\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_8;}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_9;}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_10;}
+\DoxyCodeLine{00054\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_11;}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_12;}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_13;}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_14;}
+\DoxyCodeLine{00058\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_15;}
+\DoxyCodeLine{00059\ \mbox{\hyperlink{struct_card}{Card}}\ *card\_16;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ int\ (\mbox{\hyperlink{group___game___utils_gadb2cb5096c5d6f07b6fdfe65f5ad4f77}{create\_all\_sprites}})();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ void\ (\mbox{\hyperlink{group___game___utils_ga43d9bd84e074ddc8e2bb4a40d8f08305}{destroy\_all\_sprites}})();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ int\ (\mbox{\hyperlink{group___game___utils_gaf21372341a101c8a03ace49175457f14}{create\_all\_cards}})();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ void\ (\mbox{\hyperlink{group___game___utils_gac4394be5ab07a752b1de8ae3f2e6cb55}{destroy\_all\_cards}})();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ void\ (\mbox{\hyperlink{group___game___utils_ga655de0168c87f1df15782362e4a53608}{initialize\_board}})(\mbox{\hyperlink{struct_card}{Card}}\ *board[4][4],\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ board\_h\_v\_size);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ int\ (\mbox{\hyperlink{group___game___utils_gac477bc4cbc9cbf158d8cc3ec839b84e6}{display\_number}})(\textcolor{keywordtype}{int}\ number,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ int\ (\mbox{\hyperlink{group___game___utils_ga28310821700da577471b8e2f11d2aba4}{display\_string}})(\textcolor{keywordtype}{char}*\ text,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

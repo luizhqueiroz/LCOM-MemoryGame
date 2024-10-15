@@ -1,0 +1,237 @@
+\doxysection{Record}
+\hypertarget{group___record}{}\label{group___record}\index{Record@{Record}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group___record_ga2f001f0eaa41e016abb8b937c278b4cd}{winner\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the winner mode setting the name and allowing the keyboard to work. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_gac57ec1cd19d5380bd62ccde42ea066d8}{display\+\_\+winner\+\_\+page}} ()
+\begin{DoxyCompactList}\small\item\em Display on the screen the elements to create the winner page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_ga3a32376b4526b646e697511a9ace65e0}{display\+\_\+record\+\_\+page}} ()
+\begin{DoxyCompactList}\small\item\em Display on the screen the elements to create the record page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_gaa0143431ea9aefd9cd7ca4965a884d5e}{display\+\_\+winners}} ()
+\begin{DoxyCompactList}\small\item\em Display on the screen the 5 last winners of the game. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_gadf1d877f6d92a5b6fc932677aba75f82}{display\+\_\+winner}} (char winner\+\_\+record\mbox{[}10\mbox{]}, int game\+\_\+duration\+\_\+record, char date\+\_\+time\+\_\+record\mbox{[}20\mbox{]}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Display on the screen a winner. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_gad0b7dff31ef2c93a0435c7ad652f2b96}{save\+\_\+winner}} ()
+\begin{DoxyCompactList}\small\item\em Save the player name, the time duration and the date/time when a player won the game in a file. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_ga968f39f55670d6ff03834cdc2d880f34}{winner\+\_\+control\+\_\+kbc}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bytes)
+\begin{DoxyCompactList}\small\item\em Controls what the keyboard can do in the winner page. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___record_gaf3237d2488abfee2986626a78d48c8bf}{record\+\_\+control\+\_\+kbc}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bytes)
+\begin{DoxyCompactList}\small\item\em Controls what the keyboard can do in the record page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_ga5bed1263469dab48b567f2a96ef80768}{winner\+\_\+control\+\_\+mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Controls what the mouse can do in the winner page. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group___record_gac793f99dec7734630fd6876438a0f8d9}{record\+\_\+control\+\_\+mouse}} (struct packet \texorpdfstring{$\ast$}{*}pp, int x, int y)
+\begin{DoxyCompactList}\small\item\em Controls what the mouse can do in the record page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_ga91a48a532739ce77594579b6b26f526e}{winner\+\_\+display\+\_\+mouse}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Display the mouse used for navigate on the winner page. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___record_ga225165d65522ed73f2a6ff4714dc97e2}{record\+\_\+display\+\_\+mouse}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Display the mouse used for navigate on the record page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for the game record 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___record_ga3a32376b4526b646e697511a9ace65e0}\label{group___record_ga3a32376b4526b646e697511a9ace65e0} 
+\index{Record@{Record}!display\_record\_page@{display\_record\_page}}
+\index{display\_record\_page@{display\_record\_page}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{display\_record\_page()}{display\_record\_page()}}
+{\footnotesize\ttfamily int() display\+\_\+record\+\_\+page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display on the screen the elements to create the record page. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_gadf1d877f6d92a5b6fc932677aba75f82}\label{group___record_gadf1d877f6d92a5b6fc932677aba75f82} 
+\index{Record@{Record}!display\_winner@{display\_winner}}
+\index{display\_winner@{display\_winner}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{display\_winner()}{display\_winner()}}
+{\footnotesize\ttfamily int() display\+\_\+winner (\begin{DoxyParamCaption}\item[{char}]{winner\+\_\+record\mbox{[}10\mbox{]},  }\item[{int}]{game\+\_\+duration\+\_\+record,  }\item[{char}]{date\+\_\+time\+\_\+record\mbox{[}20\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Display on the screen a winner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner\+\_\+record} & The name of the winner \\
+\hline
+{\em game\+\_\+duration\+\_\+record} & The duration in seconds the winner took to win the game \\
+\hline
+{\em date\+\_\+time\+\_\+record} & The date and time when the winner won the game \\
+\hline
+{\em x} & The x position to display all the informations starting from the left to right \\
+\hline
+{\em y} & The y position to display all the informations starting from the left to right \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_gac57ec1cd19d5380bd62ccde42ea066d8}\label{group___record_gac57ec1cd19d5380bd62ccde42ea066d8} 
+\index{Record@{Record}!display\_winner\_page@{display\_winner\_page}}
+\index{display\_winner\_page@{display\_winner\_page}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{display\_winner\_page()}{display\_winner\_page()}}
+{\footnotesize\ttfamily int() display\+\_\+winner\+\_\+page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display on the screen the elements to create the winner page. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_gaa0143431ea9aefd9cd7ca4965a884d5e}\label{group___record_gaa0143431ea9aefd9cd7ca4965a884d5e} 
+\index{Record@{Record}!display\_winners@{display\_winners}}
+\index{display\_winners@{display\_winners}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{display\_winners()}{display\_winners()}}
+{\footnotesize\ttfamily int() display\+\_\+winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display on the screen the 5 last winners of the game. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_gaf3237d2488abfee2986626a78d48c8bf}\label{group___record_gaf3237d2488abfee2986626a78d48c8bf} 
+\index{Record@{Record}!record\_control\_kbc@{record\_control\_kbc}}
+\index{record\_control\_kbc@{record\_control\_kbc}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{record\_control\_kbc()}{record\_control\_kbc()}}
+{\footnotesize\ttfamily void() record\+\_\+control\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bytes }\end{DoxyParamCaption})}
+
+
+
+Controls what the keyboard can do in the record page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & The scancode read from the keyboard \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___record_gac793f99dec7734630fd6876438a0f8d9}\label{group___record_gac793f99dec7734630fd6876438a0f8d9} 
+\index{Record@{Record}!record\_control\_mouse@{record\_control\_mouse}}
+\index{record\_control\_mouse@{record\_control\_mouse}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{record\_control\_mouse()}{record\_control\_mouse()}}
+{\footnotesize\ttfamily void() record\+\_\+control\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Controls what the mouse can do in the record page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse parsed packet to check its click \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group___record_ga225165d65522ed73f2a6ff4714dc97e2}\label{group___record_ga225165d65522ed73f2a6ff4714dc97e2} 
+\index{Record@{Record}!record\_display\_mouse@{record\_display\_mouse}}
+\index{record\_display\_mouse@{record\_display\_mouse}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{record\_display\_mouse()}{record\_display\_mouse()}}
+{\footnotesize\ttfamily int() record\+\_\+display\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Display the mouse used for navigate on the record page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_gad0b7dff31ef2c93a0435c7ad652f2b96}\label{group___record_gad0b7dff31ef2c93a0435c7ad652f2b96} 
+\index{Record@{Record}!save\_winner@{save\_winner}}
+\index{save\_winner@{save\_winner}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{save\_winner()}{save\_winner()}}
+{\footnotesize\ttfamily int() save\+\_\+winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save the player name, the time duration and the date/time when a player won the game in a file. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_ga968f39f55670d6ff03834cdc2d880f34}\label{group___record_ga968f39f55670d6ff03834cdc2d880f34} 
+\index{Record@{Record}!winner\_control\_kbc@{winner\_control\_kbc}}
+\index{winner\_control\_kbc@{winner\_control\_kbc}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{winner\_control\_kbc()}{winner\_control\_kbc()}}
+{\footnotesize\ttfamily int() winner\+\_\+control\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bytes }\end{DoxyParamCaption})}
+
+
+
+Controls what the keyboard can do in the winner page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & The scancode read from the keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_ga5bed1263469dab48b567f2a96ef80768}\label{group___record_ga5bed1263469dab48b567f2a96ef80768} 
+\index{Record@{Record}!winner\_control\_mouse@{winner\_control\_mouse}}
+\index{winner\_control\_mouse@{winner\_control\_mouse}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{winner\_control\_mouse()}{winner\_control\_mouse()}}
+{\footnotesize\ttfamily int() winner\+\_\+control\+\_\+mouse (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Controls what the mouse can do in the winner page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse parsed packet to check its click \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_ga91a48a532739ce77594579b6b26f526e}\label{group___record_ga91a48a532739ce77594579b6b26f526e} 
+\index{Record@{Record}!winner\_display\_mouse@{winner\_display\_mouse}}
+\index{winner\_display\_mouse@{winner\_display\_mouse}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{winner\_display\_mouse()}{winner\_display\_mouse()}}
+{\footnotesize\ttfamily int() winner\+\_\+display\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Display the mouse used for navigate on the winner page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___record_ga2f001f0eaa41e016abb8b937c278b4cd}\label{group___record_ga2f001f0eaa41e016abb8b937c278b4cd} 
+\index{Record@{Record}!winner\_init@{winner\_init}}
+\index{winner\_init@{winner\_init}!Record@{Record}}
+\doxysubsubsection{\texorpdfstring{winner\_init()}{winner\_init()}}
+{\footnotesize\ttfamily void() winner\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiates the winner mode setting the name and allowing the keyboard to work. 
+

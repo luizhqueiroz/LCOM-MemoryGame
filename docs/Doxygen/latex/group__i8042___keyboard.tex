@@ -1,0 +1,288 @@
+\doxysection{i8042\+\_\+\+Keyboard}
+\hypertarget{group__i8042___keyboard}{}\label{group__i8042___keyboard}\index{i8042\_Keyboard@{i8042\_Keyboard}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{group__i8042___keyboard_ga16c5827f043d82f87c726c2d4369c11d}\label{group__i8042___keyboard_ga16c5827f043d82f87c726c2d4369c11d} 
+\#define {\bfseries KBC\+\_\+\+IRQ}~1
+\begin{DoxyCompactList}\small\item\em Keyboard IRQ line. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaf4cd2a6365d38e35ff54b89ff2c2526b}\label{group__i8042___keyboard_gaf4cd2a6365d38e35ff54b89ff2c2526b} 
+\#define {\bfseries KBC\+\_\+\+ARG\+\_\+\+REG}~0x60
+\begin{DoxyCompactList}\small\item\em Address to pass the arguments of a command. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga1ccde68b2b6d4e45b50eef1403e10bb7}\label{group__i8042___keyboard_ga1ccde68b2b6d4e45b50eef1403e10bb7} 
+\#define {\bfseries KBC\+\_\+\+OUT\+\_\+\+BUF}~0x60
+\begin{DoxyCompactList}\small\item\em Keyboard output buffer register. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6f977b36b770dca3092d0bdf8c949cfe}\label{group__i8042___keyboard_ga6f977b36b770dca3092d0bdf8c949cfe} 
+\#define {\bfseries KBC\+\_\+\+ST\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Keyboard status register. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6d57c7927a10f638c83046b52c8caac9}\label{group__i8042___keyboard_ga6d57c7927a10f638c83046b52c8caac9} 
+\#define {\bfseries KBC\+\_\+\+CMD\+\_\+\+REG}~0x64
+\begin{DoxyCompactList}\small\item\em Register for write keyboard commands. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga13157095bf615428fd6a56cf5534c287}\label{group__i8042___keyboard_ga13157095bf615428fd6a56cf5534c287} 
+\#define {\bfseries FIRST\+\_\+\+B\+\_\+\+SCODE}~0x\+E0
+\begin{DoxyCompactList}\small\item\em First byte from the keyboard scancode with two bytes. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga73bb6599b4157bc326c96d6b117294b8}\label{group__i8042___keyboard_ga73bb6599b4157bc326c96d6b117294b8} 
+\#define {\bfseries ESC\+\_\+\+MAKECODE}~0x01
+\begin{DoxyCompactList}\small\item\em Esc keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga69b1626cd295acf4cf3f8e284205b9db}\label{group__i8042___keyboard_ga69b1626cd295acf4cf3f8e284205b9db} 
+\#define {\bfseries ESC\+\_\+\+BREAKCODE}~0x81
+\begin{DoxyCompactList}\small\item\em Esc keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga7867fe76c722f5f4353e5da405fa9703}\label{group__i8042___keyboard_ga7867fe76c722f5f4353e5da405fa9703} 
+\#define {\bfseries ENTER\+\_\+\+MAKECODE}~0x1C
+\begin{DoxyCompactList}\small\item\em Enter keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga242079dd79f2f02bd2f5043ee0833031}\label{group__i8042___keyboard_ga242079dd79f2f02bd2f5043ee0833031} 
+\#define {\bfseries ENTER\+\_\+\+BREAKCODE}~0x9C
+\begin{DoxyCompactList}\small\item\em Enter keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga88c99d2228595587e53e538915ebc133}\label{group__i8042___keyboard_ga88c99d2228595587e53e538915ebc133} 
+\#define {\bfseries SPACE\+\_\+\+MAKECODE}~0x39
+\begin{DoxyCompactList}\small\item\em Space bar keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaf66411e91df4364fb172e94fd47a4016}\label{group__i8042___keyboard_gaf66411e91df4364fb172e94fd47a4016} 
+\#define {\bfseries SPACE\+\_\+\+BREAKCODE}~0x\+B9
+\begin{DoxyCompactList}\small\item\em Space bar keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga60ad05c2a4ec0e35f609ead42e729c91}\label{group__i8042___keyboard_ga60ad05c2a4ec0e35f609ead42e729c91} 
+\#define {\bfseries DEL\+\_\+\+MAKECODE}~0x0E
+\begin{DoxyCompactList}\small\item\em Delete keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga9b46db5925ba2cb94c6978eb6954ed93}\label{group__i8042___keyboard_ga9b46db5925ba2cb94c6978eb6954ed93} 
+\#define {\bfseries DEL\+\_\+\+BREAKCODE}~0x8E
+\begin{DoxyCompactList}\small\item\em Delete keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gab68adb2123d5328e57659b6808362bc9}\label{group__i8042___keyboard_gab68adb2123d5328e57659b6808362bc9} 
+\#define {\bfseries UP\+\_\+\+MAKECODE}~0x48
+\begin{DoxyCompactList}\small\item\em Up keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga56bd4fe0ccefbbd328be53d0417cc267}\label{group__i8042___keyboard_ga56bd4fe0ccefbbd328be53d0417cc267} 
+\#define {\bfseries UP\+\_\+\+BREAKCODE}~0x\+C8
+\begin{DoxyCompactList}\small\item\em Up keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga42e819d260519ed7b491059543b806fa}\label{group__i8042___keyboard_ga42e819d260519ed7b491059543b806fa} 
+\#define {\bfseries DOWN\+\_\+\+MAKECODE}~0x50
+\begin{DoxyCompactList}\small\item\em Down keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga8e864003844a1baf9509e2f6bf666eee}\label{group__i8042___keyboard_ga8e864003844a1baf9509e2f6bf666eee} 
+\#define {\bfseries DOWN\+\_\+\+BREAKCODE}~0x\+D0
+\begin{DoxyCompactList}\small\item\em Down keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga444849845a1ef310d4728ee7aa2330d1}\label{group__i8042___keyboard_ga444849845a1ef310d4728ee7aa2330d1} 
+\#define {\bfseries RIGHT\+\_\+\+MAKECODE}~0x4D
+\begin{DoxyCompactList}\small\item\em Right keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga0e2e7c7013582ddc631b790107fd6a75}\label{group__i8042___keyboard_ga0e2e7c7013582ddc631b790107fd6a75} 
+\#define {\bfseries RIGHT\+\_\+\+BREAKCODE}~0x\+CD
+\begin{DoxyCompactList}\small\item\em Right keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga713d35b8eb4502ce8bc6075c075d8461}\label{group__i8042___keyboard_ga713d35b8eb4502ce8bc6075c075d8461} 
+\#define {\bfseries LEFT\+\_\+\+MAKECODE}~0x4B
+\begin{DoxyCompactList}\small\item\em Left keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga58f6a3d4ef0d6f5d4f872c52a2ccc578}\label{group__i8042___keyboard_ga58f6a3d4ef0d6f5d4f872c52a2ccc578} 
+\#define {\bfseries LEFT\+\_\+\+BREAKCODE}~0x\+CB
+\begin{DoxyCompactList}\small\item\em Left keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa9d82192b8ba93e7335e045f8b94310c}\label{group__i8042___keyboard_gaa9d82192b8ba93e7335e045f8b94310c} 
+\#define {\bfseries ONE\+\_\+\+MAKECODE}~0x02
+\begin{DoxyCompactList}\small\item\em One keyboard number makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gad25b4a66745c6c03a81eaee018a8989b}\label{group__i8042___keyboard_gad25b4a66745c6c03a81eaee018a8989b} 
+\#define {\bfseries ONE\+\_\+\+BREAKCODE}~0x82
+\begin{DoxyCompactList}\small\item\em One keyboard number breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga4f7d30b0cd0480462c39c0dac7edfaa7}\label{group__i8042___keyboard_ga4f7d30b0cd0480462c39c0dac7edfaa7} 
+\#define {\bfseries TWO\+\_\+\+MAKECODE}~0x03
+\begin{DoxyCompactList}\small\item\em Two keyboard number makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga377ba690363dad1ddb5e246235dd29c0}\label{group__i8042___keyboard_ga377ba690363dad1ddb5e246235dd29c0} 
+\#define {\bfseries TWO\+\_\+\+BREAKCODE}~0x83
+\begin{DoxyCompactList}\small\item\em Two keyboard number breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa927f504d06337eb5c0d5ea40c6bf0c4}\label{group__i8042___keyboard_gaa927f504d06337eb5c0d5ea40c6bf0c4} 
+\#define {\bfseries A\+\_\+\+MAKECODE}~0x1E
+\begin{DoxyCompactList}\small\item\em Letter A keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga10541e846ea5745feec2dc39ceda0a4a}\label{group__i8042___keyboard_ga10541e846ea5745feec2dc39ceda0a4a} 
+\#define {\bfseries A\+\_\+\+BREAKCODE}~0x9E
+\begin{DoxyCompactList}\small\item\em Letter A keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaeac53cfc0af1f1d3cb6500572d6bc9a8}\label{group__i8042___keyboard_gaeac53cfc0af1f1d3cb6500572d6bc9a8} 
+\#define {\bfseries B\+\_\+\+MAKECODE}~0x30
+\begin{DoxyCompactList}\small\item\em Letter B keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga4322aec789c5cb6939e1567a8969e426}\label{group__i8042___keyboard_ga4322aec789c5cb6939e1567a8969e426} 
+\#define {\bfseries B\+\_\+\+BREAKCODE}~0x\+B0
+\begin{DoxyCompactList}\small\item\em Letter B keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga71ef052f77f8f8baa613da103d0247ac}\label{group__i8042___keyboard_ga71ef052f77f8f8baa613da103d0247ac} 
+\#define {\bfseries C\+\_\+\+MAKECODE}~0x2E
+\begin{DoxyCompactList}\small\item\em Letter C keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga5c8eae0424a98129407aa55bdf345f5b}\label{group__i8042___keyboard_ga5c8eae0424a98129407aa55bdf345f5b} 
+\#define {\bfseries C\+\_\+\+BREAKCODE}~0x\+AE
+\begin{DoxyCompactList}\small\item\em Letter C keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga93d3df115ec6af91383132d44e78786a}\label{group__i8042___keyboard_ga93d3df115ec6af91383132d44e78786a} 
+\#define {\bfseries D\+\_\+\+MAKECODE}~0x20
+\begin{DoxyCompactList}\small\item\em Letter D keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gae8c74dea644ca5ee630c956089a1bd2f}\label{group__i8042___keyboard_gae8c74dea644ca5ee630c956089a1bd2f} 
+\#define {\bfseries D\+\_\+\+BREAKCODE}~0x\+A0
+\begin{DoxyCompactList}\small\item\em Letter D keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaf256c44d6cdd2d7afedc18c475daf71f}\label{group__i8042___keyboard_gaf256c44d6cdd2d7afedc18c475daf71f} 
+\#define {\bfseries E\+\_\+\+MAKECODE}~0x12
+\begin{DoxyCompactList}\small\item\em Letter E keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaad6ef03d8ebb7a40d4afc9c2318b1839}\label{group__i8042___keyboard_gaad6ef03d8ebb7a40d4afc9c2318b1839} 
+\#define {\bfseries E\+\_\+\+BREAKCODE}~0x92
+\begin{DoxyCompactList}\small\item\em Letter E keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaf4e2d15a8d9f2effb8aad795347c2065}\label{group__i8042___keyboard_gaf4e2d15a8d9f2effb8aad795347c2065} 
+\#define {\bfseries F\+\_\+\+MAKECODE}~0x21
+\begin{DoxyCompactList}\small\item\em Letter F keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga8f198f4d6e9cde2a05711eda503ad3b1}\label{group__i8042___keyboard_ga8f198f4d6e9cde2a05711eda503ad3b1} 
+\#define {\bfseries F\+\_\+\+BREAKCODE}~0x\+A1
+\begin{DoxyCompactList}\small\item\em Letter F keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa0b3f8aa1c79d5097cfcb546ce390f03}\label{group__i8042___keyboard_gaa0b3f8aa1c79d5097cfcb546ce390f03} 
+\#define {\bfseries G\+\_\+\+MAKECODE}~0x22
+\begin{DoxyCompactList}\small\item\em Letter G keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga9880d99488b3b07c7be6c08bbb062140}\label{group__i8042___keyboard_ga9880d99488b3b07c7be6c08bbb062140} 
+\#define {\bfseries G\+\_\+\+BREAKCODE}~0x\+A2
+\begin{DoxyCompactList}\small\item\em Letter G keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga15ee32e977a9999710bb6382484901a3}\label{group__i8042___keyboard_ga15ee32e977a9999710bb6382484901a3} 
+\#define {\bfseries H\+\_\+\+MAKECODE}~0x23
+\begin{DoxyCompactList}\small\item\em Letter H keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga019b90f210418b540faf283d05d8a81f}\label{group__i8042___keyboard_ga019b90f210418b540faf283d05d8a81f} 
+\#define {\bfseries H\+\_\+\+BREAKCODE}~0x\+A3
+\begin{DoxyCompactList}\small\item\em Letter H keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga0ca0c26803bbed23fed7353fbba99483}\label{group__i8042___keyboard_ga0ca0c26803bbed23fed7353fbba99483} 
+\#define {\bfseries I\+\_\+\+MAKECODE}~0x17
+\begin{DoxyCompactList}\small\item\em Letter I keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga21f33602da09fe6341c4363e4c16b932}\label{group__i8042___keyboard_ga21f33602da09fe6341c4363e4c16b932} 
+\#define {\bfseries I\+\_\+\+BREAKCODE}~0x97
+\begin{DoxyCompactList}\small\item\em Letter I keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga8dfcfbf16e8dce5ef11ea481cc9aa5ea}\label{group__i8042___keyboard_ga8dfcfbf16e8dce5ef11ea481cc9aa5ea} 
+\#define {\bfseries J\+\_\+\+MAKECODE}~0x24
+\begin{DoxyCompactList}\small\item\em Letter J keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga7e87ae4027c388127c069af984d0cc1d}\label{group__i8042___keyboard_ga7e87ae4027c388127c069af984d0cc1d} 
+\#define {\bfseries J\+\_\+\+BREAKCODE}~0x\+A4
+\begin{DoxyCompactList}\small\item\em Letter J keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga65ab1a4dafac575b20489b7e584ba271}\label{group__i8042___keyboard_ga65ab1a4dafac575b20489b7e584ba271} 
+\#define {\bfseries K\+\_\+\+MAKECODE}~0x25
+\begin{DoxyCompactList}\small\item\em Letter K keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaabdb6a7257983615f83fde434429684f}\label{group__i8042___keyboard_gaabdb6a7257983615f83fde434429684f} 
+\#define {\bfseries K\+\_\+\+BREAKCODE}~0x\+A5
+\begin{DoxyCompactList}\small\item\em Letter K keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gab3ba6005436abf6b34eb773344bf5c3b}\label{group__i8042___keyboard_gab3ba6005436abf6b34eb773344bf5c3b} 
+\#define {\bfseries L\+\_\+\+MAKECODE}~0x26
+\begin{DoxyCompactList}\small\item\em Letter L keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaacf0590cf496b4c78ca58b67ffcd5779}\label{group__i8042___keyboard_gaacf0590cf496b4c78ca58b67ffcd5779} 
+\#define {\bfseries L\+\_\+\+BREAKCODE}~0x\+A6
+\begin{DoxyCompactList}\small\item\em Letter L keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6b54f3267f8e13f481dca22baf5c541c}\label{group__i8042___keyboard_ga6b54f3267f8e13f481dca22baf5c541c} 
+\#define {\bfseries M\+\_\+\+MAKECODE}~0x32
+\begin{DoxyCompactList}\small\item\em Letter M keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6d689aac16d9808c71b961563929dc23}\label{group__i8042___keyboard_ga6d689aac16d9808c71b961563929dc23} 
+\#define {\bfseries M\+\_\+\+BREAKCODE}~0x\+B2
+\begin{DoxyCompactList}\small\item\em Letter M keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga0114bb25fcca746699ef0753bc78f999}\label{group__i8042___keyboard_ga0114bb25fcca746699ef0753bc78f999} 
+\#define {\bfseries N\+\_\+\+MAKECODE}~0x31
+\begin{DoxyCompactList}\small\item\em Letter N keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga9394f2032a809468e379f33ec83ba7fd}\label{group__i8042___keyboard_ga9394f2032a809468e379f33ec83ba7fd} 
+\#define {\bfseries N\+\_\+\+BREAKCODE}~0x\+B1
+\begin{DoxyCompactList}\small\item\em Letter N keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga8a719724336c29c01b359cd66f4bca64}\label{group__i8042___keyboard_ga8a719724336c29c01b359cd66f4bca64} 
+\#define {\bfseries O\+\_\+\+MAKECODE}~0x18
+\begin{DoxyCompactList}\small\item\em Letter O keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga590ee20e4e03d4bb1ea894fa38f60661}\label{group__i8042___keyboard_ga590ee20e4e03d4bb1ea894fa38f60661} 
+\#define {\bfseries O\+\_\+\+BREAKCODE}~0x98
+\begin{DoxyCompactList}\small\item\em Letter O keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga4c0d749b6798e67a0a2efcfec207d511}\label{group__i8042___keyboard_ga4c0d749b6798e67a0a2efcfec207d511} 
+\#define {\bfseries P\+\_\+\+MAKECODE}~0x19
+\begin{DoxyCompactList}\small\item\em Letter P keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga5c00e3ccacc5c6b3b75f226a7874aa63}\label{group__i8042___keyboard_ga5c00e3ccacc5c6b3b75f226a7874aa63} 
+\#define {\bfseries P\+\_\+\+BREAKCODE}~0x99
+\begin{DoxyCompactList}\small\item\em Letter P keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gad71ed7bf9173ac1f623ecbe5af7536d9}\label{group__i8042___keyboard_gad71ed7bf9173ac1f623ecbe5af7536d9} 
+\#define {\bfseries Q\+\_\+\+MAKECODE}~0x10
+\begin{DoxyCompactList}\small\item\em Letter Q keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga01c47c8779d7bf7de5f43db245a9c1aa}\label{group__i8042___keyboard_ga01c47c8779d7bf7de5f43db245a9c1aa} 
+\#define {\bfseries Q\+\_\+\+BREAKCODE}~0x90
+\begin{DoxyCompactList}\small\item\em Letter Q keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gac336e4eb446ffa3551e872b9f2f74765}\label{group__i8042___keyboard_gac336e4eb446ffa3551e872b9f2f74765} 
+\#define {\bfseries R\+\_\+\+MAKECODE}~0x13
+\begin{DoxyCompactList}\small\item\em Letter R keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6da8beec6ff51e72fa6e172ed8fb6e59}\label{group__i8042___keyboard_ga6da8beec6ff51e72fa6e172ed8fb6e59} 
+\#define {\bfseries R\+\_\+\+BREAKCODE}~0x93
+\begin{DoxyCompactList}\small\item\em Letter R keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gafb49ae1cf8349eb37cf659f822517367}\label{group__i8042___keyboard_gafb49ae1cf8349eb37cf659f822517367} 
+\#define {\bfseries S\+\_\+\+MAKECODE}~0x1F
+\begin{DoxyCompactList}\small\item\em Letter S keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa886d578de64455984c2a4891deb2426}\label{group__i8042___keyboard_gaa886d578de64455984c2a4891deb2426} 
+\#define {\bfseries S\+\_\+\+BREAKCODE}~0x9F
+\begin{DoxyCompactList}\small\item\em Letter S keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gabc2d23fe92f7ddbb8582a73f26a3b751}\label{group__i8042___keyboard_gabc2d23fe92f7ddbb8582a73f26a3b751} 
+\#define {\bfseries T\+\_\+\+MAKECODE}~0x14
+\begin{DoxyCompactList}\small\item\em Letter T keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gadce1735930a7ee21db2bc719c62331b7}\label{group__i8042___keyboard_gadce1735930a7ee21db2bc719c62331b7} 
+\#define {\bfseries T\+\_\+\+BREAKCODE}~0x94
+\begin{DoxyCompactList}\small\item\em Letter T keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga4899cdc23035f4716243412db165547f}\label{group__i8042___keyboard_ga4899cdc23035f4716243412db165547f} 
+\#define {\bfseries U\+\_\+\+MAKECODE}~0x16
+\begin{DoxyCompactList}\small\item\em Letter U keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga2d1d42687043fa4e97300a311fa5efcf}\label{group__i8042___keyboard_ga2d1d42687043fa4e97300a311fa5efcf} 
+\#define {\bfseries U\+\_\+\+BREAKCODE}~0x96
+\begin{DoxyCompactList}\small\item\em Letter U keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga24ccb282e15fdaa40b855c422231d4c9}\label{group__i8042___keyboard_ga24ccb282e15fdaa40b855c422231d4c9} 
+\#define {\bfseries V\+\_\+\+MAKECODE}~0x2F
+\begin{DoxyCompactList}\small\item\em Letter V keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaddaf072d1ab267c9e658fef2b3419048}\label{group__i8042___keyboard_gaddaf072d1ab267c9e658fef2b3419048} 
+\#define {\bfseries V\+\_\+\+BREAKCODE}~0x\+AF
+\begin{DoxyCompactList}\small\item\em Letter V keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaacb486a15d86e744b84b4d5404720f66}\label{group__i8042___keyboard_gaacb486a15d86e744b84b4d5404720f66} 
+\#define {\bfseries X\+\_\+\+MAKECODE}~0x2D
+\begin{DoxyCompactList}\small\item\em Letter X keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga1787c3ce3e43a308a80926fb65f69ec3}\label{group__i8042___keyboard_ga1787c3ce3e43a308a80926fb65f69ec3} 
+\#define {\bfseries X\+\_\+\+BREAKCODE}~0x\+AD
+\begin{DoxyCompactList}\small\item\em Letter X keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga5ab123cb1d762fb3ea2048720e33afc0}\label{group__i8042___keyboard_ga5ab123cb1d762fb3ea2048720e33afc0} 
+\#define {\bfseries W\+\_\+\+MAKECODE}~0x11
+\begin{DoxyCompactList}\small\item\em Letter W keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga5a3058901f00c196fece41ef411e4a8f}\label{group__i8042___keyboard_ga5a3058901f00c196fece41ef411e4a8f} 
+\#define {\bfseries W\+\_\+\+BREAKCODE}~0x91
+\begin{DoxyCompactList}\small\item\em Letter W keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa3b2bcbff59bd30358d5c9de2ef9371c}\label{group__i8042___keyboard_gaa3b2bcbff59bd30358d5c9de2ef9371c} 
+\#define {\bfseries Y\+\_\+\+MAKECODE}~0x15
+\begin{DoxyCompactList}\small\item\em Letter Y keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gab433a889835d4add4111482e9cc68d0b}\label{group__i8042___keyboard_gab433a889835d4add4111482e9cc68d0b} 
+\#define {\bfseries Y\+\_\+\+BREAKCODE}~0x95
+\begin{DoxyCompactList}\small\item\em Letter Y keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga0ee4ac1c0d33c28ce92cae3b4b123952}\label{group__i8042___keyboard_ga0ee4ac1c0d33c28ce92cae3b4b123952} 
+\#define {\bfseries Z\+\_\+\+MAKECODE}~0x2C
+\begin{DoxyCompactList}\small\item\em Letter Z keyboard makecode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga3621ace9a64415f512e23744fb558db9}\label{group__i8042___keyboard_ga3621ace9a64415f512e23744fb558db9} 
+\#define {\bfseries Z\+\_\+\+BREAKCODE}~0x\+AC
+\begin{DoxyCompactList}\small\item\em Letter Z keyboard breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga37cb235aa4f14fbcab57e1efbde0aa5b}\label{group__i8042___keyboard_ga37cb235aa4f14fbcab57e1efbde0aa5b} 
+\#define {\bfseries MAKE\+\_\+\+BREAK\+\_\+\+CODE}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Bit distinguish makecode and breakcode. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga141ccbc1ab10dfcdd1d450414dba13d4}\label{group__i8042___keyboard_ga141ccbc1ab10dfcdd1d450414dba13d4} 
+\#define {\bfseries KBC\+\_\+\+ST\+\_\+\+IBF}~BIT(1)
+\begin{DoxyCompactList}\small\item\em Bit indicates input buffer full. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga38010ed603a29beee559b2c20de50dcd}\label{group__i8042___keyboard_ga38010ed603a29beee559b2c20de50dcd} 
+\#define {\bfseries KBC\+\_\+\+ST\+\_\+\+OBF}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit indicates output buffer full. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga5a01c98e394aedacd058f4dc3b953bb0}\label{group__i8042___keyboard_ga5a01c98e394aedacd058f4dc3b953bb0} 
+\#define {\bfseries KBC\+\_\+\+ST\+\_\+\+AUX}~BIT(5)
+\begin{DoxyCompactList}\small\item\em Bit indicates mouse data. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaea2ef6dda1aabebf291eeee29b66c04a}\label{group__i8042___keyboard_gaea2ef6dda1aabebf291eeee29b66c04a} 
+\#define {\bfseries KBC\+\_\+\+PAR\+\_\+\+ERR}~BIT(7)
+\begin{DoxyCompactList}\small\item\em Bit indicates parity error. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gae31c3653f5881b02cbfdd4ccbb7ccf50}\label{group__i8042___keyboard_gae31c3653f5881b02cbfdd4ccbb7ccf50} 
+\#define {\bfseries KBC\+\_\+\+TO\+\_\+\+ERR}~BIT(6)
+\begin{DoxyCompactList}\small\item\em Bit indicates timeout error. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga2e071a869e2d2bc5f843fdcc576313c6}\label{group__i8042___keyboard_ga2e071a869e2d2bc5f843fdcc576313c6} 
+\#define {\bfseries ENABLE\+\_\+\+KBC\+\_\+\+INT}~BIT(0)
+\begin{DoxyCompactList}\small\item\em Bit indicates if keyboard interrupts are enabled on OBF. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gac362543face83351b5562e814f492b94}\label{group__i8042___keyboard_gac362543face83351b5562e814f492b94} 
+\#define {\bfseries DISABLE\+\_\+\+KBC\+\_\+\+ITFC}~BIT(4)
+\begin{DoxyCompactList}\small\item\em Bit indicates if keyboard iterface is disabled. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gaa554763d6a066605edecacdea834da9b}\label{group__i8042___keyboard_gaa554763d6a066605edecacdea834da9b} 
+\#define {\bfseries WAIT\+\_\+\+KBC}~20000
+\begin{DoxyCompactList}\small\item\em Tick delay for keyboard. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gacbd895d3e6c768486ece37c636a5e3a6}\label{group__i8042___keyboard_gacbd895d3e6c768486ece37c636a5e3a6} 
+\#define {\bfseries READ\+\_\+\+CMDB}~0x20
+\begin{DoxyCompactList}\small\item\em Command to read command byte. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga4179941d8813e43dfcb87de50918d25c}\label{group__i8042___keyboard_ga4179941d8813e43dfcb87de50918d25c} 
+\#define {\bfseries WRITE\+\_\+\+CMDB}~0x60
+\begin{DoxyCompactList}\small\item\em Command to write command byte. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga6f10ee17144039630847a9103a0f9b1a}\label{group__i8042___keyboard_ga6f10ee17144039630847a9103a0f9b1a} 
+\#define {\bfseries CHKC\+\_\+\+KBC\+\_\+\+CMDB}~0x\+AA
+\begin{DoxyCompactList}\small\item\em Command to check KBC. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga0a7c80292c93205c3077f7f365a469df}\label{group__i8042___keyboard_ga0a7c80292c93205c3077f7f365a469df} 
+\#define {\bfseries CHCK\+\_\+\+KBD\+\_\+\+ITFC\+\_\+\+CMDB}~0x\+AB
+\begin{DoxyCompactList}\small\item\em Command to check keyboard interface. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_ga236c7be3791f6fbbeab1a860ef8486e5}\label{group__i8042___keyboard_ga236c7be3791f6fbbeab1a860ef8486e5} 
+\#define {\bfseries DIS\+\_\+\+KBD\+\_\+\+ITFC\+\_\+\+CMDB}~0x\+AD
+\begin{DoxyCompactList}\small\item\em Command to disable keyboard interface. \end{DoxyCompactList}\item 
+\Hypertarget{group__i8042___keyboard_gad763dfa2bdd41ba19931da19e4e71fd0}\label{group__i8042___keyboard_gad763dfa2bdd41ba19931da19e4e71fd0} 
+\#define {\bfseries ENB\+\_\+\+KBD\+\_\+\+ITFC\+\_\+\+CMDB}~0x\+AE
+\begin{DoxyCompactList}\small\item\em Command to enable keyboard interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Constants for programming the i8042 Keyboard 

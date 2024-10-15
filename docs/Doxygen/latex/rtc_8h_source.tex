@@ -1,0 +1,37 @@
+\doxysection{rtc.\+h}
+\hypertarget{rtc_8h_source}{}\label{rtc_8h_source}\index{devices/rtc/rtc.h@{devices/rtc/rtc.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ \_LCOM\_RTC\_H\_}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}rtc\_info.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00018\ \ \ \ \ uint8\_t\ sec;}
+\DoxyCodeLine{00019\ \ \ \ \ uint8\_t\ min;}
+\DoxyCodeLine{00020\ \ \ \ \ uint8\_t\ hour;}
+\DoxyCodeLine{00021\ \ \ \ \ uint8\_t\ day;}
+\DoxyCodeLine{00022\ \ \ \ \ uint8\_t\ month;}
+\DoxyCodeLine{00023\ \ \ \ \ uint8\_t\ year;}
+\DoxyCodeLine{00024\ \}\ \mbox{\hyperlink{structdate__time__info}{date\_time\_info}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ int\ (\mbox{\hyperlink{group___r_t_c_gab35928f9d2af14f11e572261ec844383}{rtc\_read\_data}})(uint8\_t\ address,\ uint8\_t\ *data);}
+\DoxyCodeLine{00041\ int\ (\mbox{\hyperlink{group___r_t_c_gad1b77caef70360695cf9729cf87a254d}{rtc\_write\_data}})(uint8\_t\ address,\ uint8\_t\ data);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ int\ (\mbox{\hyperlink{group___r_t_c_ga6bbe679f115cec90d36d50eb2aac1b89}{rtc\_subscribe\_int}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ int\ (\mbox{\hyperlink{group___r_t_c_ga9d4850bb2a488644672d43287f160622}{rtc\_unsubscribe\_int}})();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ int\ (\mbox{\hyperlink{group___r_t_c_ga6c6781a78540b2811c08de174c110961}{rtc\_is\_updating}})();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ int\ (\mbox{\hyperlink{group___r_t_c_ga0d5fa2b6a299944c3c6f45d8c831e690}{rtc\_is\_binary}})();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ int\ (\mbox{\hyperlink{group___r_t_c_ga337b3165e24e54c59cc1ebe8bfd33e92}{get\_time\_date\_info}})(\mbox{\hyperlink{structdate__time__info}{date\_time\_info}}\ *info);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ uint8\_t\ (\mbox{\hyperlink{group___r_t_c_gabafa1143e74844fd7ba93aafc4336bfe}{bcd\_to\_binary}})(uint8\_t\ bcd);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

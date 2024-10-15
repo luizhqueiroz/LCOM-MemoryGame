@@ -1,0 +1,165 @@
+\doxysection{RTC}
+\hypertarget{group___r_t_c}{}\label{group___r_t_c}\index{RTC@{RTC}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdate__time__info}{date\+\_\+time\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group___r_t_c_gab35928f9d2af14f11e572261ec844383}{rtc\+\_\+read\+\_\+data}} (uint8\+\_\+t address, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Reads the data from rtc. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_gad1b77caef70360695cf9729cf87a254d}{rtc\+\_\+write\+\_\+data}} (uint8\+\_\+t address, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes the data in rtc. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_ga6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes rtc interrupt. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_ga9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes rtc interrupt. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_ga6c6781a78540b2811c08de174c110961}{rtc\+\_\+is\+\_\+updating}} ()
+\begin{DoxyCompactList}\small\item\em Check if rtc is updating. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_ga0d5fa2b6a299944c3c6f45d8c831e690}{rtc\+\_\+is\+\_\+binary}} ()
+\begin{DoxyCompactList}\small\item\em Check if rtc data form is binary or BCD. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group___r_t_c_ga337b3165e24e54c59cc1ebe8bfd33e92}{get\+\_\+time\+\_\+date\+\_\+info}} (\mbox{\hyperlink{structdate__time__info}{date\+\_\+time\+\_\+info}} \texorpdfstring{$\ast$}{*}info)
+\begin{DoxyCompactList}\small\item\em Get the information about time and date. \end{DoxyCompactList}\item 
+uint8\+\_\+t() \mbox{\hyperlink{group___r_t_c_gabafa1143e74844fd7ba93aafc4336bfe}{bcd\+\_\+to\+\_\+binary}} (uint8\+\_\+t bcd)
+\begin{DoxyCompactList}\small\item\em Convert BCD data format to Binary data format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using the real time clock 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group___r_t_c_gabafa1143e74844fd7ba93aafc4336bfe}\label{group___r_t_c_gabafa1143e74844fd7ba93aafc4336bfe} 
+\index{RTC@{RTC}!bcd\_to\_binary@{bcd\_to\_binary}}
+\index{bcd\_to\_binary@{bcd\_to\_binary}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{bcd\_to\_binary()}{bcd\_to\_binary()}}
+{\footnotesize\ttfamily uint8\+\_\+t() bcd\+\_\+to\+\_\+binary (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcd }\end{DoxyParamCaption})}
+
+
+
+Convert BCD data format to Binary data format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bcd} & The bcd data to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the converted binary data 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_ga337b3165e24e54c59cc1ebe8bfd33e92}\label{group___r_t_c_ga337b3165e24e54c59cc1ebe8bfd33e92} 
+\index{RTC@{RTC}!get\_time\_date\_info@{get\_time\_date\_info}}
+\index{get\_time\_date\_info@{get\_time\_date\_info}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{get\_time\_date\_info()}{get\_time\_date\_info()}}
+{\footnotesize\ttfamily int() get\+\_\+time\+\_\+date\+\_\+info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdate__time__info}{date\+\_\+time\+\_\+info}} \texorpdfstring{$\ast$}{*}}]{info }\end{DoxyParamCaption})}
+
+
+
+Get the information about time and date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & A struct that contain information about time and date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_ga0d5fa2b6a299944c3c6f45d8c831e690}\label{group___r_t_c_ga0d5fa2b6a299944c3c6f45d8c831e690} 
+\index{RTC@{RTC}!rtc\_is\_binary@{rtc\_is\_binary}}
+\index{rtc\_is\_binary@{rtc\_is\_binary}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_is\_binary()}{rtc\_is\_binary()}}
+{\footnotesize\ttfamily int() rtc\+\_\+is\+\_\+binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if rtc data form is binary or BCD. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 if BCD, 1 if binary and 2 if an error occurred 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_ga6c6781a78540b2811c08de174c110961}\label{group___r_t_c_ga6c6781a78540b2811c08de174c110961} 
+\index{RTC@{RTC}!rtc\_is\_updating@{rtc\_is\_updating}}
+\index{rtc\_is\_updating@{rtc\_is\_updating}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_is\_updating()}{rtc\_is\_updating()}}
+{\footnotesize\ttfamily int() rtc\+\_\+is\+\_\+updating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if rtc is updating. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 if false, 1 if true and 2 if an error occurred 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_gab35928f9d2af14f11e572261ec844383}\label{group___r_t_c_gab35928f9d2af14f11e572261ec844383} 
+\index{RTC@{RTC}!rtc\_read\_data@{rtc\_read\_data}}
+\index{rtc\_read\_data@{rtc\_read\_data}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_read\_data()}{rtc\_read\_data()}}
+{\footnotesize\ttfamily int() rtc\+\_\+read\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data }\end{DoxyParamCaption})}
+
+
+
+Reads the data from rtc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The address location of the rtc register \\
+\hline
+{\em data} & The data obtained from the rtc register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_ga6bbe679f115cec90d36d50eb2aac1b89}\label{group___r_t_c_ga6bbe679f115cec90d36d50eb2aac1b89} 
+\index{RTC@{RTC}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes rtc interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Bit number of rtc IRQ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_ga9d4850bb2a488644672d43287f160622}\label{group___r_t_c_ga9d4850bb2a488644672d43287f160622} 
+\index{RTC@{RTC}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes rtc interrupt. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group___r_t_c_gad1b77caef70360695cf9729cf87a254d}\label{group___r_t_c_gad1b77caef70360695cf9729cf87a254d} 
+\index{RTC@{RTC}!rtc\_write\_data@{rtc\_write\_data}}
+\index{rtc\_write\_data@{rtc\_write\_data}!RTC@{RTC}}
+\doxysubsubsection{\texorpdfstring{rtc\_write\_data()}{rtc\_write\_data()}}
+{\footnotesize\ttfamily int() rtc\+\_\+write\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{address,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes the data in rtc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The address location of the rtc register \\
+\hline
+{\em data} & The data to write in the rtc register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
